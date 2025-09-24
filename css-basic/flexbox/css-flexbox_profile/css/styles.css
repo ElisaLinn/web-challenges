@@ -8,8 +8,12 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   
+  
 }
-
+.profile {
+  display: flex;
+  flex-direction: column;
+}
 h2 {
   color: #3f0097;
 }
@@ -26,6 +30,7 @@ h2 {
   aspect-ratio: 1 / 1;
   border: solid #3f0097 1px;
   max-width: 50%;
+  align-self: center;
   
 }
 
