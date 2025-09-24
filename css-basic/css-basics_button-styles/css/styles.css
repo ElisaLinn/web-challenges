@@ -31,18 +31,26 @@ button {
 Make sure not to put your code into the comments, because then nothing will happen. */
 
 .button1 {
+  
+  border-color: pink;
+  border-radius: 15px;
   /* Style me! Change my border, set a border radius or try out other styles. :) */
 }
 
 .button2 {
+  background-color: aquamarine;
+  color:darkblue
   /* Style me! Change my color or background-color, or both! You can experiment with different color formats here, like HEX, RGB, etc. */
 }
 
 .button3 {
+  font-style: oblique;
   /* Style me! You can test out changing the font, font size, ...*/
 }
 
 .button4 {
+  box-shadow: 10px 3px 3px red;
+  
   /* Style me! Can you add a shadow to this button? Try playing around with shadow properties - you can even change the shadow color, size, and more. */
 }
 
