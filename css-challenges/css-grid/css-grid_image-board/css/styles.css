@@ -17,6 +17,9 @@ body {
   grid-template-rows: 300px 200px 300px;
   gap: 1rem;
   padding: 1rem;
+  grid-template-areas: "ba ana me"
+                       "ku ana blu"
+                       "ku to blu";
   /* Add styles here */
 }
 
@@ -29,25 +32,31 @@ body {
 }
 
 .image-board__image--1 {
+  grid-area: ba;
   /* Add styles here */
 }
 
 .image-board__image--2 {
+  grid-area: ku;
   /* Add styles here */
 }
 
 .image-board__image--3 {
+  grid-area: me;
   /* Add styles here */
 }
 
 .image-board__image--4 {
+  grid-area: ana;
   /* Add styles here */
 }
 
 .image-board__image--5 {
+  grid-area: to;
   /* Add styles here */
 }
 
 .image-board__image--6 {
+  grid-area: blu;
   /* Add styles here */
 }
