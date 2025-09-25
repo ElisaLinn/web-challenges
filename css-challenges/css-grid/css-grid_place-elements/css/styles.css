@@ -56,25 +56,42 @@ body {
 }
 
 .element-1 {
+  grid-column-start: 3;
+  grid-column-end: 5;
   /* Add styles here */
 }
 
 .element-2 {
+  grid-column-start: 5;
+  grid-column-end: 11;
   /* Add styles here */
 }
 
-.element-5 {
+.element-5 { 
+  grid-column-start: 3;
+  grid-column-end: 5;
+grid-row-start: 3;
+  grid-row-end: 5
+
+;
   /* Add styles here */
 }
 
 .element-8 {
+  grid-column: 7;
+  grid-row: 3 / span 2;
   /* Add styles here */
 }
 
 .element-spiced {
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 1;
   /* Add styles here */
 }
 
 .element-20 {
+  grid-column-start: 1;
+  grid-row: 6 /span 2;
   /* Add styles here */
 }
