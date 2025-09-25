@@ -32,7 +32,9 @@ body {
   max-width: 900px;
   padding: 2rem;
   margin: auto;
-
+ display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   /* Add styles to the container */
 }
 
@@ -48,3 +50,5 @@ body {
 .services__text {
   color: var(--white);
 }
+
+
