@@ -2,6 +2,11 @@
 *::before,
 *::after {
   box-sizing: border-box;
+
+:root {
+  --color-granite: #252629;
+  --color-nemo: #e85b26;
+  --color-foam: #E8D9BF;
 }
 
 body {
@@ -11,13 +16,13 @@ body {
 }
 
 header {
-  background: rgb(131 54 255/ 45%);
+  background: var(--color-granite);
   
 }
 
 h1 {
   text-align: center;
-  color: white;
+  color: #ffffff;
   line-height: 1.4;
   margin: 0;
   letter-spacing: 0.025em;
@@ -63,7 +68,7 @@ figure {
 }
 
 figcaption {
-  color: rgb(255 255 255);
+  color: #ffffff;
 }
 
 nav {
@@ -77,8 +82,8 @@ a {
   font-size: smaller;
   padding: 8px;
   border-radius: 4px;
-  background-color: hsl(14 100% 53%);
-  color: #fff;
+  background-color: #ff4a11ff;
+  color: #ffffff;
 }
 
 a:hover,
@@ -88,7 +93,7 @@ a:focus-visible {
 }
 
 mark {
-  background-color: rgb(255 74 17);
+  background-color: #ff4a11ff;;
   color: #ffffff;
   border-radius: 4px;
   letter-spacing: 0.025em;
