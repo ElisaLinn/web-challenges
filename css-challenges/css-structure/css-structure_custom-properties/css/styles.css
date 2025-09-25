@@ -2,6 +2,9 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+  
 
 :root {
   --color-granite: #252629;
@@ -35,7 +38,7 @@ h2 {
 }
 
 strong {
-  color: #ff4a11;
+  color: var(--color-nemo);
 }
 
 section {

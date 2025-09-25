@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <article class="info-card">
+    <article class="info-card__body">
       <h2>Learning BEM</h2>
       <p>
         BEM stands for Block-Element-Modifier, which is a naming convention for
@@ -19,23 +19,23 @@
       </p>
       <ul>
         <li>
-          <span class="list-title">Block</span>: The name of a component, for
+          <span class="info-card__list__title">Block</span>: The name of a component, for
           example "card". It defines the scope of the classes and prevents
           accidental duplicated name usage.
         </li>
         <li>
-          <span class="list-title">Element</span>: One element inside the block,
+          <span class="info-card__list__title">Element</span>: One element inside the block,
           for example the title of the card. the naming for this class is then
           <span class="text-highlighted">BLOCK__ELEMENT</span> e.g.
           "card__title".
         </li>
         <li>
-          <span class="list-title">Modifier</span>: To distinguish between
+          <span class="info-card__list__title">Modifier</span>: To distinguish between
           different variants of an element, for example if you have a regular
           button and a special one with the primary color, then you can
           overwrite elements of the regular button with the modifier class
-          <span class="text-highlighted">BLOCK__ELEMENT--modifier</span> or
-          <span class="text-highlighted">BLOCK--modifier</span> if the block
+          <span class="info-card__text-highlighted">BLOCK__ELEMENT--modifier</span> or
+          <span class="info-card__text-highlighted">BLOCK--modifier</span> if the block
           itself has multiple variants. An example would be "card__button" for
           one button and two classes for the variant "card__button
           card__button--primary". The modifier class cannot stand on its own,
@@ -43,7 +43,7 @@
           different.
         </li>
       </ul>
-      <div class="buttons">
+      <div class="info-card__button--group">
         <button class="primary">I got it</button>
         <button>I need more practice</button>
       </div>
