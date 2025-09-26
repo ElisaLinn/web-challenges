@@ -59,19 +59,15 @@ h1 {
   margin: auto;
 }
 
-.box--one {
-  background-color: lightblue;
-
-  width: 100px;
-  height: 100px;
-}
-
 .box--two {
   background-color: lightgreen;
-
-  width: 100px;
   height: 100px;
+  width: 100%;
 }
+
+@media (min-width: 600px) {
+  .box--two {
+
 
 .box--three {
   background-color: lightpink;
