@@ -10,7 +10,11 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const title = "Social Media Post";
+const text = "My favorite pet";
+let numberOfLikes = 83;
+const author = Elisa
+const isReported = true;
 // --^-- write your code here --^--
 
 /*
@@ -18,5 +22,11 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+console.log(title);
+console.log(text);
+console.log(numberOfLikes);
+console.log(author);
+console.log(isReported);
 
+numberOfLikes += 1;
 // --^-- write your code here --^--
