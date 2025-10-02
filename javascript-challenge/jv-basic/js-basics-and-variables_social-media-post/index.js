@@ -13,7 +13,7 @@ console.clear();
 const title = "Social Media Post";
 const text = "My favorite pet";
 let numberOfLikes = 83;
-const author = Elisa
+const author = "Elisa";
 const isReported = true;
 // --^-- write your code here --^--
 
@@ -29,4 +29,5 @@ console.log(author);
 console.log(isReported);
 
 numberOfLikes += 1;
+console.log(numberOfLikes);
 // --^-- write your code here --^--
