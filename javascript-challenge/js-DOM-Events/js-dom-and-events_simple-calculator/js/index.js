@@ -8,7 +8,18 @@ const operand2 = 4;
 // Step 1: Use `document.querySelector` to select each button by its `data-js` attribute.
 
 // --v-- write your code here --v--
-
+const add = document.querySelector("[data-js=add]");
+const subtract = document.querySelector("[data-js=substract]");
+const multiply = document.querySelector("[data-js=multiply]");
+const divide = document.querySelector("[data-js=divide]");
+const exponent = document.querySelector("[data-js=exponent]");
+const modulo = document.querySelector("[data-js=modulo]");
+const increaseByOne = document.querySelector("[data-js=incease-by-one]");
+const increaseByFive = document.querySelector("[data-js=incease-by-five]");
+const decreaseByOne = document.querySelector("[data-js=decrease-by-one]");
+const decreaseByFive = document.querySelector("[data-js=decrease-by-five]");
+const multiplyByTwo = document.querySelector("[data-js=multiply-by-two]");
+const divideByTwo = document.querySelector("[data-js=divide-by-two]");
 // --^-- write your code here --^--
 
 /* 
@@ -22,7 +33,14 @@ For each operation (add, subtract, multiply, divide, exponent, and modulo):
 */
 
 // --v-- write your code here --v--
-
+add.addEventListener("click", () => {
+  operand1 + operand2;
+});
+subtract.addEventListener("click", () => {
+  operand1 + operand2;
+});
+console.log(subtract)
+console.log(add);
 // --^-- write your code here --^--
 
 // ----- Update the First Operand -----
