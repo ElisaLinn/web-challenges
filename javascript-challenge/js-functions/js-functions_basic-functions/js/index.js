@@ -9,7 +9,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const title = "Lord of Javascript";
+const author = "Mario";
+const rating = "4.5";
+const sales = "120";
 // --^-- write your code here --^--
 
 /*
@@ -27,7 +30,10 @@ Then:
 */
 
 // --v-- write your code here --v--
-
+console.log(title);
+console.log(author);
+console.log(rating);
+console.log(sales);
 // --^-- write your code here --^--
 
 /*
@@ -40,5 +46,14 @@ Then:
 */
 
 // --v-- write your code here --v--
-
+function logBookData() {
+  console.log(title);
+  console.log(author);
+  console.log(rating);
+  console.log(sales);
+}
+logBookData();
+logBookData();
+logBookData();
+logBookData();
 // --^-- write your code here --^--
