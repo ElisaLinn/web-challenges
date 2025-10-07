@@ -1,6 +1,6 @@
 console.clear();
 
-console.log("-------------");
+// console.log("-------------");
 console.log("Exercise 1:");
 /*
 1: The function below is not executed. Can you figure out why? Find the bug and fix it.
@@ -12,7 +12,7 @@ console.log("Exercise 1:");
 function logText() {
   console.log("This text does not appear. Why?");
 }
-
+logText();
 console.log("-------------");
 console.log("Exercise 2:");
 /*
@@ -38,7 +38,10 @@ greetMary();
 
 // --v-- write your code here --v--
 
-function greet() {}
+function greet(name) {
+  console.log("Welcome " + name + ",good to see you again");
+}
+greet("Alice");
 
 // --^-- write your code here --^--
 
