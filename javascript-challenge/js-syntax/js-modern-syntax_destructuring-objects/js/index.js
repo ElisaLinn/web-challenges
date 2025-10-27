@@ -13,7 +13,8 @@ const company = {
 };
 
 // Example: export const { value1 } = myObject;
-
+// export const {name} =company;
+// console.log(name);
 /*
 EXERCISE 2
 We have an object called `user`.
@@ -25,7 +26,8 @@ Use destructuring to extract the following:
 */
 
 const user = { name: "John", years: 30 };
-
+export const { name, years: age, isAdmin = false } = user;
+console.log(user);
 /*
 EXERCISE 3
 Extract properties from the dog object and
@@ -38,6 +40,8 @@ const dog = {
   age: 5,
 };
 
+export const { name: dogName, breed: dogBreed, age: dogAge } = dog;
+console.log(dog);
 /*
 EXERCISE 4
 Extract the `lastName` property from the `person` object as `personLastName`.
@@ -49,6 +53,8 @@ const person = {
   age: 24,
   firstName: "Alex",
 };
+const { lastName: personLastName, ...moreInformations } = person;
+console.log(moreInformations);
 
 /*
 EXERCISE 5
@@ -57,14 +63,18 @@ three variables `name`, `country` and `numPeople`.
 Hint: You may need to rename one property during destructuring.
 */
 
+// export function logInfo(city) {
+//   const name = city.name;
+//   const country = city.country;
+//   const numPeople = city.population;
+
 export function logInfo(city) {
-  const name = city.name;
-  const country = city.country;
-  const numPeople = city.population;
+  const { name, country, population: numPeople } = city;
 
   return `${name} is in ${country} and has ${numPeople} inhabitants in it.`;
 }
-
+//  function logInfo(city)
+//   const { name, country, population: numPeople} = city;
 // Usage example:
 console.log(
   logInfo({ name: "Marseille", country: "France", population: 861635 })
