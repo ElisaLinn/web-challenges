@@ -1,5 +1,17 @@
 import Counter from "./components/Counter";
 import "./styles.css";
+import { useState } from "react";
+
+const [people, setPeople] = useState(0);
+
+  function increase (){
+       setPeople(people + 1);
+  }
+
+function decrease (){
+      setPeople(people - 1);}
+
+
 
 export default function App() {
   return (

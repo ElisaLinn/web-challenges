@@ -6,6 +6,7 @@ function Card({ user }) {
     <article className="card">
       <h2>{user.name}</h2>
       <ul className="card__taglist">
+        {user.roles.map((role)=> <Tag key={role} tag={role} />)}
         <Tag tag={user.roles[0]} />
       </ul>
       <p>{user.about}</p>
@@ -16,3 +17,4 @@ function Card({ user }) {
 }
 
 export default Card;
+

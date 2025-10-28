@@ -6,10 +6,23 @@ import List from "./components/List";
 export default function App() {
   const [tags, setTags] = useState(["JavaScript", "React", "CSS", "HTML"]);
 
+function handleAddTag (newTag){
+    const UpdatedTags = [...tags, newTag];
+  setTags(UpdatedTags);
+
+  }
+ function handleDeleteTag (tagToDelete){
+ const DeleteTag = (tags.filter((tag)=> tag !== tagToDelete));
+ setTags(DeleteTag)
+ }
+
   return (
     <main className="app">
-      <Form />
-      <List tags={tags} />
+      <Form onAddTag={handleAddTag} />
+      
+      <List tags={tags} 
+      onDeleteTag={handleDeleteTag}
+      />
     </main>
   );
 }
