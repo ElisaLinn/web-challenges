@@ -3,6 +3,8 @@ import "./styles.css";
 export default function App() {
   function handleSubmit(event) {
     event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData);
   }
 
   return (

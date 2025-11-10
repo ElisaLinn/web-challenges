@@ -1,5 +1,6 @@
 import useName from "./hooks/useName";
 import "./styles.css";
+import { useState } from "react";
 
 export default function App() {
   const [name, setFirstName, setLastName] = useName();
